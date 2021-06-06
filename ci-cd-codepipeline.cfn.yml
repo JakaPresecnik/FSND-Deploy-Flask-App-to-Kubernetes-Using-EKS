@@ -40,7 +40,7 @@ Parameters:
 
   GitHubUser:
     Type: String
-    Default: SudKul
+    Default: JakaPresecnik
     Description: JakaPresecnik
     MinLength: 3
     MaxLength: 100
