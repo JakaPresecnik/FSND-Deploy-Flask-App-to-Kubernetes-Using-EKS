@@ -65,7 +65,7 @@ def health():
 @APP.route('/auth', methods=['POST'])
 def auth():
     """
-    Create JWT token based on email.
+    Create JWT token based on email. 
     """
     request_data = request.get_json()
     email = request_data.get('email')
@@ -86,7 +86,7 @@ def auth():
 @APP.route('/contents', methods=['GET'])
 def decode_jwt():
     """
-    Check user token and return non-secret data
+    Check user token and return non-secret data.
     """
     if not 'Authorization' in request.headers:
         abort(401)
